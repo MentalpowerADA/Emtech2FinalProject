@@ -1,1 +1,4 @@
 best_model65p2%.hdf5 filter=lfs diff=lfs merge=lfs -text
+README.md filter=lfs diff=lfs merge=lfs -text
+Cardboard_2.jpg filter=lfs diff=lfs merge=lfs -text
+RealWaste filter=lfs diff=lfs merge=lfs -text
