@@ -50,7 +50,7 @@ st.write("Upload an image to classify the type of waste.")
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
 def import_and_predict(image_data, model):
-    size = (150, 150)
+    size = (128, 128)
     image = ImageOps.fit(image_data, size)
     img = np.asarray(image)
     img = np.expand_dims(img, axis=0)
