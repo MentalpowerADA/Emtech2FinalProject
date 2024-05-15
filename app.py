@@ -51,7 +51,7 @@ uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png
 
 def import_and_predict(image_data, model):
     size = (150, 150)
-    image = ImageOps.fit(image_data, size, Image.ANTIALIAS)
+    image = ImageOps.fit(image_data, size)
     img = np.asarray(image)
     img = np.expand_dims(img, axis=0)
     img = img / 255.0
