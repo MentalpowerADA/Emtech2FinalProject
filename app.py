@@ -53,7 +53,7 @@ def import_and_predict(image_data, model):
     size = (128, 128)
     image = ImageOps.fit(image_data, size)
     img = np.asarray(image)
-    img = np.expand_dims(img, axis=0)
+    #img = np.expand_dims(img, axis=0)
     img = img / 255.0
     prediction = model.predict(img)
     return prediction
